@@ -6,8 +6,8 @@ import BucketPage from '../pages/buckets';
 const AppRouter = () => {
 	return (
 		<Router>
-			<Redirect from='/buckets' to='/' noThrow />
 			<BucketPage path='/' />
+			<Redirect from='/buckets' to='/' noThrow />
 			<BucketDetailPage path='/buckets/:id' />
 			<NotFound default />
 		</Router>
